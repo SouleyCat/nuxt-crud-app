@@ -3,7 +3,7 @@
       <h2 class="text-center mt-5 mb-3">Projet CRUD NUXT</h2>
       <div class="card">
           <div class="card-header text-end">
-              <NuxtLink to="/create"
+              <NuxtLink to="/article/create"
                   class="btn btn-outline-primary"
                   >Nouveau Projet
               </NuxtLink>
@@ -24,8 +24,8 @@
                           <td>{{project.name}}</td>
                           <td>{{project.description}}</td>
                           <td>
-                              <NuxtLink :to="`/show/${project.id}`" class="btn btn-outline-info mx-1">Voir</NuxtLink>
-                              <NuxtLink :to="`/edit/${project.id}`" class="btn btn-outline-success mx-1">Modifier</NuxtLink>
+                              <NuxtLink :to="`/article/show/${project.id}`" class="btn btn-outline-info mx-1">Voir</NuxtLink>
+                              <NuxtLink :to="`/article/edit/${project.id}`" class="btn btn-outline-success mx-1">Modifier</NuxtLink>
                               <button 
                                   @click="handleDelete(project.id)"
                                   className="btn btn-outline-danger mx-1">
